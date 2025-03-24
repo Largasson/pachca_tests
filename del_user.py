@@ -23,10 +23,10 @@ headers = {
     "Connection": "close",
 }
 
-user_id = 549680
+user_id = 540942
 
 try:
-    response = requests.get(f"{base_url}/users/{user_id}", headers=headers)
+    response = requests.delete(f"{base_url}/users/{user_id}", headers=headers)
     logger.debug(response.status_code)
     users_dict = response.json()
     logger.debug(users_dict)

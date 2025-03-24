@@ -1,7 +1,9 @@
 import os
+from pprint import pprint
 import requests
 import dotenv
 import logging
+
 
 logging.basicConfig(
     level=logging.DEBUG,
@@ -23,13 +25,15 @@ headers = {
     "Connection": "close",
 }
 
-user_id = 549680
+
 
 try:
-    response = requests.get(f"{base_url}/users/{user_id}", headers=headers)
+    response = requests.get(f"{base_url}/users", headers=headers)
     logger.debug(response.status_code)
     users_dict = response.json()
-    logger.debug(users_dict)
+    pprint(users_dict)
+    for user in users_dict['data']:
+        logger.info(user['id'])
 
 except requests.exceptions.RequestException as e:
     logger.warning(e)
