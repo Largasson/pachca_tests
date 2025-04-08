@@ -46,14 +46,9 @@ def get_list_of_messages(thread_chat_id: [int, str]) -> list:
             thread_dict = response.json()
             logger.debug("Получен JSON-ответ:")
             logger.debug(thread_dict)
-            pprint(thread_dict)
             for message in thread_dict['data']:
-                # print(message['chat_id'])
                 user_name_value = users_name_dict.setdefault(message['user_id'], user_name(message['user_id']))
                 date = message['created_at']
-                # print(f"{date}-{user_name_value}: {message['content']}")
-                # print()
-                # list_of_messages.append(f"{date}-{user_name_value}: {message['content']}")
                 if message['content'] == '':
                     continue
                 msg = dict(msg_date=date, user_name=user_name_value, message=message['content'])
