@@ -1,6 +1,4 @@
 import requests
-import json
-import requests
 import os
 import dotenv
 
@@ -21,9 +19,10 @@ headers = {
 # Тело запроса
 payload = {
     "user": {
-        "first_name": "Тимофей",
-        "last_name": "Ершов",
-        "email": "te@example.com"
+        "first_name": "Pef",
+        "last_name": "ds",
+        "email": "asfih@example.com",
+        "nickname": "wsdgsvbvbйцу"
     }}
 # Выполнение POST-запроса
 try:

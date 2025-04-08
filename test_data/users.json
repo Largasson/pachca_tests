@@ -1,0 +1,123 @@
+{
+  "users": [
+    {
+      "first_name": "Иван",
+      "last_name": "Иванов",
+      "nickname": "1",
+      "email": "ii@example.com",
+      "suspended": false
+    }]}
+
+//    {
+//      "first_name": "",
+//      "last_name": "",
+//      "nickname": "4f",
+//      "email": "iii@example.com",
+//      "suspended": false
+//    },
+//    {
+//      "first_name": "Тимофей",
+//      "last_name": "",
+//      "email": "te@example.com",
+//      "suspended": false
+//    },
+//    {
+//      "first_name": "Олег",
+//      "last_name": "",
+//      "nickname": "olegpetrov",
+//      "email": "olegp@example.com",
+//      "phone_number": "",
+//      "department": "Продукт",
+//      "title": "CIO",
+//      "role": "admin",
+//      "suspended": false,
+//      "invite_status": "confirmed",
+//      "list_tags": [
+//        "Product",
+//        "Design"
+//      ],
+//      "custom_properties": [
+//        {
+//          "id": 1678,
+//          "name": "Город",
+//          "data_type": "string",
+//          "value": "Санкт-Петербург"
+//        }
+//      ],
+//      "user_status": null,
+//      "bot": false,
+//      "created_at": "2020-06-08T09:10:11.000Z",
+//      "last_activity_at": "2025-01-20T13:40:07.000Z",
+//      "time_zone": "Europe/Moscow",
+//      "image_url": null
+//    },
+//    {
+//      "first_name": "Сергей",
+//      "last_name": "Кузнецов",
+//      "nickname": "skuz",
+//      "email": "sergkuzn@example.com",
+//      "phone_number": "",
+//      "department": "Разработка",
+//      "title": "iOS Developer",
+//      "role": "user",
+//      "suspended": false,
+//      "invite_status": "confirmed",
+//      "list_tags": [
+//        "Development",
+//        "Android"
+//      ],
+//      "custom_properties": [
+//        {
+//          "id": 1678,
+//          "name": "Город",
+//          "data_type": "string",
+//          "value": "Москва"
+//        }
+//      ],
+//      "user_status": {
+//        "emoji": "🎮",
+//        "title": "Очень занят",
+//        "expires_at": "2024-04-08T10:00:00.000Z"
+//      },
+//      "bot": false,
+//      "created_at": "2020-06-08T09:31:17.000Z",
+//      "last_activity_at": "2025-01-20T07:00:32.000Z",
+//      "time_zone": "Europe/Moscow",
+//      "image_url": null
+//    },
+//    {
+//      "first_name": "Дмитрий",
+//      "last_name": "Смирнов",
+//      "nickname": "dsmir",
+//      "email": "ds@example.com",
+//      "phone_number": "",
+//      "department": "Разработка",
+//      "title": "Android Developer",
+//      "role": "user",
+//      "suspended": false,
+//      "invite_status": "confirmed",
+//      "list_tags": [
+//        "Development",
+//        "Frontend"
+//      ],
+//      "custom_properties": [
+//        {
+//          "id": 1678,
+//          "name": "Город",
+//          "data_type": "string",
+//          "value": "Санкт-Петербург"
+//        }
+//      ],
+//      "user_status": {
+//        "emoji": "🚀",
+//        "title": "Лечу",
+//        "expires_at": null
+//      },
+//      "bot": false,
+//      "created_at": "2020-06-08T09:32:57.000Z",
+//      "last_activity_at": "2025-01-20T13:51:25.000Z",
+//      "time_zone": "Europe/Moscow",
+//      "image_url": null
+//    }
+//  ]
+//}

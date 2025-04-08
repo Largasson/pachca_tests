@@ -2,13 +2,10 @@ import os
 import requests
 import dotenv
 import logging
-from get_users import users_id
-
-
-
+from pprint import pprint
 
 logging.basicConfig(
-    level=logging.DEBUG,
+    level=logging.INFO,
     format='%(asctime)s %(levelname)s %(message)s'
 )
 
@@ -27,13 +24,26 @@ headers = {
     "Connection": "close",
 }
 
-for user_id in users_id:
-
+# user_id = 366898
+def user_name(user_id:[int, str]=None) -> str:
+    name = None
     try:
-        response = requests.delete(f"{base_url}/users/{user_id}", headers=headers)
+        response = requests.get(f"{base_url}/users/{user_id}", headers=headers)
         logger.debug(response.status_code)
+        response.raise_for_status()
         users_dict = response.json()
         logger.debug(users_dict)
+        name =  users_dict['data']['first_name']
+        # pprint(users_dict)
+    except requests.exceptions.HTTPError as e:
+        logger.warning(e)
 
     except requests.exceptions.RequestException as e:
         logger.warning(e)
+
+    return name
+
+if __name__ == "__main__":
+    name = user_name(547390)
+    logger.info(name)
+

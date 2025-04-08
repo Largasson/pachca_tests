@@ -1,6 +1,6 @@
 import os
 from pprint import pprint
-
+import json
 import requests
 import dotenv
 
@@ -17,15 +17,15 @@ headers = {
     "Connection": "close",
 }
 
+
+user_id = 549931
+
 params = {
-    "user": {
-        "nickname": "sktkjsystemlkfksdf",
-        # 'last_name': 'Василек',
-        # 'first_name': ''
+    'user': {
+        'nickname': 'timofej-ershov'
     }
 }
 
-user_id = 553079
 
 try:
     response = requests.put(f"{base_url}/{user_id}", headers=headers, json=params)
